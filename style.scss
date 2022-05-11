@@ -55,7 +55,7 @@ li {
 // ヘッダーに関するスタイル
 .header {
   width: 100%;
-  height: 80px;
+  height: 120px;
   background-color: #fff;
   box-sizing: border-box;
   position: fixed;
@@ -94,7 +94,7 @@ li {
 .pickup {
   display: flex;
   justify-content: space-between;
-  padding-top: 100px;
+  padding-top: 170px;
   margin-bottom: 50px;
 
   .article {
@@ -174,7 +174,7 @@ li {
   }
 
   .text {
-    padding: 10px 40px 30px 40px;
+    padding: 10px 0 15px 0;
   }
 
   // サイドバーに関するスタイル
@@ -270,6 +270,7 @@ footer {
   .footer-title {
     margin-bottom: 30px;
     font-weight: bold;
+    font-size: 22px;
   }
 
   .about-list {
@@ -319,23 +320,59 @@ footer {
 SP
 -------------------------------------------*/
 @media screen and (max-width: 599px) {
-// header
+  /* header */
+  .header {
+    position: fixed;
+    z-index: 999;
+  }
   nav {
       /* 横スクロールを表示 */
       overflow-x: scroll;
     }
 
-// pickup
+/* pickup */
 .pickup {
-  padding-top: 50px;
+  padding-top: 150px;
   flex-direction: column;
+
   .article {
     width: 100%;
-    margin-bottom: 30px;
     }
     .article-title {
       margin: 20px;
       text-align: center;
     }
 }
+/* container */
+  .container {
+    flex-direction: column;
+/* main */
+      main {
+      width: 100%;
+      }
+      .main-title {
+        margin-bottom: 15px;
+        margin-top: 30px;
+        a {
+          font-size: 20px;
+        }
+      }
+      /* aside */
+      .aside {
+        width: 100%;
+      }
+    }
+      /* footer */
+    .footer .content {
+      flex-direction: column;
+      .item {
+          width: 100%;
+          margin: 10px;
+
+          .menu-list {
+              margin-bottom: 15px;
+            }
+        }
+    }
+/*  */
 }
