@@ -53,7 +53,7 @@ li {
 }
 
 // ヘッダーに関するスタイル
-header {
+.header {
   width: 100%;
   height: 80px;
   background-color: #fff;
@@ -74,7 +74,7 @@ header {
   nav {
     display: block;
     background: black;
-    padding: 15px;
+    padding: 5px;
   }
 
   ul {
@@ -313,4 +313,13 @@ footer {
   .copyright {
     text-align: center;
   }
+}
+
+/*-------------------------------------------
+SP
+-------------------------------------------*/
+@media screen and (max-width: 599px) {
+// header
+
+
 }
