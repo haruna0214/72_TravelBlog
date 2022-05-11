@@ -320,6 +320,22 @@ SP
 -------------------------------------------*/
 @media screen and (max-width: 599px) {
 // header
+  nav {
+      /* 横スクロールを表示 */
+      overflow-x: scroll;
+    }
 
-
+// pickup
+.pickup {
+  padding-top: 50px;
+  flex-direction: column;
+  .article {
+    width: 100%;
+    margin-bottom: 30px;
+    }
+    .article-title {
+      margin: 20px;
+      text-align: center;
+    }
+}
 }
