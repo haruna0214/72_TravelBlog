@@ -1,7 +1,5 @@
 @charset "UTF-8";
 body {
-  display: flex;
-  flex-direction: column;
   padding-top: 90px;
   font-family: "Noto Sans", "Noto Sans JP";
 }
@@ -13,8 +11,8 @@ body {
 
 .wrapper {
   max-width: 1200px;
-  padding: 0 15px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 img {
@@ -91,7 +89,7 @@ li {
 .pickup {
   display: flex;
   justify-content: space-between;
-  padding-top: 170px;
+  padding-top: 100px;
   margin-bottom: 50px;
 }
 
@@ -253,7 +251,7 @@ footer {
 footer .content {
   display: flex;
   justify-content: space-between;
-  padding: 50px 0;
+  padding: 50px 20px;
 }
 
 footer .item {
@@ -324,11 +322,12 @@ SP
   }
   /* pickup */
   .pickup {
-    padding-top: 150px;
+    padding-top: 60px;
     flex-direction: column;
   }
   .pickup .article {
     width: 100%;
+    margin-bottom: 30px;
   }
   .pickup .article-title {
     margin: 20px;
@@ -356,6 +355,7 @@ SP
   /* footer */
   .footer .content {
     flex-direction: column;
+    padding: 20px;
   }
   .footer .content .item {
     width: 100%;
